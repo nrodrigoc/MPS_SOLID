@@ -1,5 +1,5 @@
-public class EmailCliente {
-    public String geraClimaAlerta(String condicaoClimatica) {
+public class EmailCliente implements NotificadorAlerta{
+    public String notificarAlerta(String condicaoClimitica){
         String alerta = "Estar " + condicaoClimatica;
         return alerta;
     }
