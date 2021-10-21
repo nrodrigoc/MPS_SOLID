@@ -3,4 +3,5 @@ abstract class Apartamento {
     int numeroQuartos;
 
     abstract void setAreaApartamento(int sqft);
+    abstract void upgrade();
 }

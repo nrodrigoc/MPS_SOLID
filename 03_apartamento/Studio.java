@@ -6,4 +6,8 @@ public class Studio extends Apartamento {
     public void setAreaApartamento(int area) {
         this.areaApartamento = area;
     }
+
+    public void upgrade() {
+        setAreaApartamento(this.areaApartamento + 1);
+    }
 }

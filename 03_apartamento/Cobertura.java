@@ -6,4 +6,8 @@ public class Cobertura extends Apartamento {
     public void setAreaApartamento(int area) {
         this.areaApartamento = area;
     }
+
+    public void upgrade() {
+        setAreaApartamento(this.areaApartamento + 40);
+    }
 }
