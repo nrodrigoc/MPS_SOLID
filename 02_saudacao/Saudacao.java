@@ -1,22 +1,11 @@
-public class Saudacao {
-    String formalidade;
+public class Saudacao{
+    private Formalidade formalidade;
 
-    public String saudar () {
-        if (this.formalidade == "formal") {
-            return "Bom dia, sr.";
-        }
-        else if (this.formalidade == "casual") {
-            return "E aí, blz?";
-        }
-        else if (this.formalidade == "intimo") {
-            return "Oi querida!";
-        }
-        else {
-            return "Oi.";
-        }
-    }
+     public String saudar(){
+         formalidade.retornarFormalidade();
+     }
 
-    public void setFormalidade(String formalidade) {
+    public void setFormalidade(Formalidade formalidade){
         this.formalidade = formalidade;
     }
 }
